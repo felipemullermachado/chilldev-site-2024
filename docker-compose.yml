@@ -1,8 +1,8 @@
 version: '3.7'
 services:
   app:
-    image: portfolio-site-2024
-    container_name: portfolio-site-2024
+    image: chilldev-site-2024
+    container_name: chilldev-site-2024
     build:
       context: .
       dockerfile: Dockerfile
