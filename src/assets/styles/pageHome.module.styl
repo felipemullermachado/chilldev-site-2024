@@ -1,0 +1,22 @@
+.core
+  .hero
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center 
+    .container-img
+      max-width: 320px
+      width 100%
+      border-radius: 50%
+      margin-top: 50px
+      img
+        border-radius: inherit
+
+proportional(max-width 1699px, .8)
+
+@media only screen and (max-width: 767px)
+  .core
+    .hero
+      .container-img
+        max-width: 240px

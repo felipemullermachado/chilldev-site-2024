@@ -5,6 +5,7 @@
 
 body, html
   overflow-x hidden
+  font-size: 10px
 
 button
   background none
@@ -37,13 +38,89 @@ img
   width 100%
 
 strong
-  font-weight: 700
+  font-weight: bold !important
   font-size: 1em
+
+.block
+  display: block
 
 /* Font-sizes */  
 
 body
-  background #fff
-  color #212429
+  background #F9F9F9
+  color #141c3a
   font-family 'Nunito Sans'
-  font-size: 10px
+
+h1
+  font-family 'Red Hat Display'
+  font-weight 800
+  font-size: 7.2em
+  line-height: 1.11em
+
+h1
+  + p
+    margin-top: 10px
+
+p
+  font-size: 1.8em
+  line-height: 1.5em
+  &.large-size
+    font-size: 2.1em
+
+/* Container */
+
+main
+  > :first-child
+    padding-top: 100px
+
+.container
+  display: block
+  margin 0 auto
+  width 100%
+  max-width: 1548px // @proportional-skip
+  padding-bottom 100px
+  &.no-max
+    max-width: 100%
+
+.color-purple
+  color #4831d4
+
+proportional(max-width 1699px, .8)
+
+@media only screen and (max-width: 1699px)
+  .container
+    width 80%
+
+
+@media only screen and (max-width: 1279px)
+  body, html
+    font-size: 10px
+
+  main
+    > :first-child
+      padding-top: 60px
+  
+  .container
+    padding-bottom 60px
+    width 100%
+    padding-left: 20px
+    padding-right: 20px
+  
+  h1
+    font-size: 4.5rem
+
+  p
+    font-size: 1.6em
+    &.large-size
+      font-size: 1.6em
+
+@media only screen and (max-width: 767px)
+  main
+    > :first-child
+      padding-top: 40px
+  
+  .container
+    padding-bottom 40px
+  
+  h1
+    font-size: 3rem
