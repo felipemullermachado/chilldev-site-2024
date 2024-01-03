@@ -5,7 +5,7 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   swcMinify: true,
-  plugins: ['next-stylus'],
+  plugins: ['next-stylus', 'stylus-proportional/next'],
 
   // Converte classes em camelCase
   webpack: (config) => {
