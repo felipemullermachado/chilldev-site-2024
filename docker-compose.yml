@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  app:
+    image: portfolio-site-2024
+    container_name: portfolio-site-2024
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
+      - /app/.next
+      - /app/node_modules
+    tty: true
+    environment:
+      - TERM=xterm-256color`
