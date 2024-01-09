@@ -12,11 +12,29 @@
       margin-top: 50px
       img
         border-radius: inherit
+  
+  .introduce
+    max-width: 800px
+    :global(.btn)
+      margin-top: 40px
+  
+  .skills-list
+    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8
+    border-radius: 12px // @proportional-skip
+    margin-top: -50px
+    background #fff
+    padding 60px 35px
+    
+
 
 proportional(max-width 1699px, .8)
 
 @media only screen and (max-width: 767px)
   .core
     .hero
+      h1
+        max-width: 360px
+      p
+        max-width: 381px
       .container-img
         max-width: 240px
