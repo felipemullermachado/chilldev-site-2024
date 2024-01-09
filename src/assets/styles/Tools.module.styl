@@ -1,0 +1,56 @@
+.core
+  display: flex
+  flex-wrap: wrap
+  margin-top: 30px
+  gap 20px
+  >li
+    display: inline-block
+    border-radius: 5px
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: calc(11.111% - 17.777px)
+    width 100%
+    aspect-ratio: 1
+    display: flex
+    justify-content: center
+    align-items: center
+    position relative
+    transition transform .15s ease-in
+    &:hover
+      .title
+        opacity 1
+  img
+    max-width: 60%
+  figure 
+    border-radius: inherit
+  .title
+    position: absolute
+    height: 100%
+    width 100%
+    left: 50%
+    top 50%
+    transform translate(-50%, -50%)
+    border-radius: inherit
+    background #4831d4
+    display flex
+    justify-content: center
+    align-items: center
+    opacity 0
+    transition all .2s ease-in
+    span
+      background #fff
+      padding 5px
+      user-select: none
+      width 100%
+      text-align: center
+
+@media only screen and (max-width: 1279px)
+  .core
+    >li
+      max-width: calc(16.666% - 16.666px)
+
+@media only screen and (max-width: 767px)
+  .core
+    >li
+      max-width: calc(33.333% - 13.333px)
+      :global(.text-size)
+        font-size: 1.4rem
