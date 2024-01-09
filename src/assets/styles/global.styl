@@ -1,5 +1,8 @@
 @import './fonts'
 
+$color-purple = #4831d4
+$color-white = #FFF
+
 *, *:before
   box-sizing border-box
 
@@ -36,6 +39,7 @@ img
   margin 0 auto
   max-width: 100%
   width 100%
+  height: auto
 
 strong
   font-weight: bold !important
@@ -51,21 +55,37 @@ body
   color #141c3a
   font-family 'Nunito Sans'
 
-h1
+.color-purple
+  color $color-purple
+
+.color-white
+  color $color-white
+
+.bkg-color-purple
+  background-color $color-purple
+
+
+.title
   font-family 'Red Hat Display'
-  font-weight 800
-  font-size: 7.2em
+  font-weight 700
+  font-size: 3.2rem
   line-height: 1.11em
+  &.large-size
+    font-size: 7.2rem
 
-h1
+.title
   + p
-    margin-top: 10px
+    margin-top: 20px
 
-p
-  font-size: 1.8em
+p,
+.text-size
+  font-size: 1.8rem
   line-height: 1.5em
   &.large-size
     font-size: 2.1em
+
+.text-center
+  text-align: center
 
 /* Container */
 
@@ -81,15 +101,42 @@ main
   padding-bottom 100px
   &.no-max
     max-width: 100%
+  &.no-padding
+    padding-bottom 0
 
-.color-purple
-  color #4831d4
+div[class^="bkg-color-"]
+  .container
+    padding-top: 100px
+    padding-bottom 100px
+
+.btn
+  border: 2px solid #000;
+  padding: 10px 22px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-align center
+  letter-spacing: .5px;
+  transition: background-color .4s,border .4s,color .4s;
+  &.btn-purple
+    border-color $color-white
+    color $color-purple
+    background $color-white
+    &:hover
+      background $color-purple
+      color $color-white !important
+      color #000
 
 proportional(max-width 1699px, .8)
 
 @media only screen and (max-width: 1699px)
   .container
     width 80%
+  
+  p,
+  .text-size
+    font-size: 1.9rem
 
 
 @media only screen and (max-width: 1279px)
@@ -106,13 +153,15 @@ proportional(max-width 1699px, .8)
     padding-left: 20px
     padding-right: 20px
   
-  h1
-    font-size: 4.5rem
-
-  p
-    font-size: 1.6em
+  .title
     &.large-size
-      font-size: 1.6em
+      font-size: 4.5rem
+
+  p,
+  .text-size
+    font-size: 1.6rem
+    &.large-size
+      font-size: 1.6rem
 
 @media only screen and (max-width: 767px)
   main
@@ -122,5 +171,7 @@ proportional(max-width 1699px, .8)
   .container
     padding-bottom 40px
   
-  h1
-    font-size: 3rem
+  .title
+    font-size: 2.8rem
+    &.large-size
+      font-size: 3.8rem
