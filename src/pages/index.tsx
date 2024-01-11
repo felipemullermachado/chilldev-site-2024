@@ -1,7 +1,90 @@
 import imgFace from '../assets/img/img-face.jpg'
+import imgMarina from '../assets/img/img-marina-sunshine.png'
+import imgAqua from '../assets/img/img-aqua.png'
+import imgBliss from '../assets/img/img-bliss.png'
+import imgDimas from '../assets/img/img-dimas.png'
+import imgLWSA from '../assets/img/img-lwsa.png'
+import imgMeetime from '../assets/img/img-meetime.png'
+import imgPalazzo from '../assets/img/img-palazzo.png'
+import imgPatio from '../assets/img/img-patio-das-artes.png'
+import imgRDSummit from '../assets/img/img-rdsummit.png'
+import imgUnicred from '../assets/img/img-unicred.png'
+import imgPCCR from '../assets/img/img-pccr.png'
 import cn from 'classnames'
 import st from '../assets/styles/pageHome.module.styl'
-import { Tools } from '@/components'
+import { Cards, Tools } from '@/components'
+
+const cards = [
+  {
+    title:
+      'Institutional website for a group of companies offering technological solutions',
+    company: 'LWSA',
+    imgSrc: imgLWSA,
+    link: 'https://lwsa.tech/',
+  },
+  {
+    title:
+      'Land sales campaign for a building construction and urban infrastructure company',
+    company: 'Marina Sunshine',
+    imgSrc: imgMarina,
+    link: 'https://www.marinasunshine.com.br/',
+  },
+  {
+    title: 'Corporate website for an insurance broker',
+    company: 'Dimas Seguros',
+    imgSrc: imgDimas,
+    link: 'https://www.dimasseguros.com.br/',
+  },
+  {
+    title: 'Apartment sales campaign for a building company',
+    company: 'Acqua Continentale',
+    imgSrc: imgAqua,
+    link: 'https://acqua.formacco.com.br/',
+  },
+  {
+    title: 'Blog about financial education for a bank',
+    company: 'Unicred - Blog',
+    imgSrc: imgUnicred,
+    link: 'https://unicred.com.br/centralconexao/suasaudefinanceira/',
+  },
+  {
+    title: 'Apartment sales campaign for a building company',
+    company: 'Bliss',
+    imgSrc: imgBliss,
+    link: 'https://www.cota.com.br/bliss-living/',
+  },
+  {
+    title:
+      'Stand management system for Latin America`s largest marketing, sales and innovation fair',
+    company: 'Partners RD Summit',
+    imgSrc: imgRDSummit,
+    link: 'https://patrocinadorrdsummit.rdstation.com/',
+  },
+  {
+    title: 'Apartment sales campaign for a building company',
+    company: 'Andreas Palazzo',
+    imgSrc: imgPalazzo,
+    link: 'https://andreaspalazzo.formacco.com.br/',
+  },
+  {
+    title: 'Career and remuneration plan for bank employees',
+    company: 'Career and remuneration - Unicred',
+    imgSrc: imgPCCR,
+    link: 'https://www.pccrcentralconexao.com.br/',
+  },
+  {
+    title: 'Website for a Sales Engagement platform',
+    company: 'Meetime',
+    imgSrc: imgMeetime,
+    link: 'https://www.meetime.com.br/',
+  },
+  {
+    title: 'Apartment sales campaign for a building company',
+    company: 'Pátio das Artes',
+    imgSrc: imgPatio,
+    link: 'https://www.patiodasartes.com.br/',
+  },
+]
 
 export default function Home() {
   return (
@@ -38,7 +121,6 @@ export default function Home() {
             have a passion for bringing creative ideas proposed by UI/UX
             designers to life.
           </p>
-          {/* <a href="" className='btn btn-purple'>Learn more</a> */}
         </section>
       </div>
       <div className="container">
@@ -57,6 +139,7 @@ export default function Home() {
             Here are some previous projects I've worked on. Want to see more?
             Contact me.
           </p>
+          <Cards cards={cards} />
         </section>
       </div>
     </main>
