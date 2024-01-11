@@ -24,6 +24,7 @@
     "react": "^18",
     "react-dom": "^18",
     "reset-css": "^5.0.2",
+    "sharp": "^0.33.1",
     "stylus": "^0.62.0",
     "stylus-loader": "^7.1.3",
     "stylus-proportional": "^1.4.1",
