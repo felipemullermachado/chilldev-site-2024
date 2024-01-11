@@ -31,6 +31,9 @@ const nextConfig = {
     })
     return config
   },
+  env: {
+    siteUrl: 'https://chilldev.vercel.app', // Without trailing slash
+  },
 }
 
 module.exports = withPlugins(nextConfig)

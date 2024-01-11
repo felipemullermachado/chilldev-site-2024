@@ -12,7 +12,7 @@ import imgUnicred from '../assets/img/img-unicred.png'
 import imgPCCR from '../assets/img/img-pccr.png'
 import cn from 'classnames'
 import st from '../assets/styles/pageHome.module.styl'
-import { Cards, Tools } from '@/components'
+import { Cards, Tools, Head } from '@/components'
 
 const cards = [
   {
@@ -86,9 +86,11 @@ const cards = [
   },
 ]
 
-export default function Home() {
+export default function Home({ pathname }: PageProps) {
   return (
-    <main className={st.core}>
+    <>
+      <Head pathname={pathname} />
+      <main className={st.core}>
       <section className={cn('container', st.hero)}>
         <h1 className="title large-size">
           Does your team need a{' '}
@@ -143,5 +145,6 @@ export default function Home() {
         </section>
       </div>
     </main>
+    </>
   )
 }
