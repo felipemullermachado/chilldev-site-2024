@@ -23,6 +23,8 @@
     "next-with-plugins": "^0.0.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
+    "resend": "^2.1.0",
     "reset-css": "^5.0.2",
     "sharp": "^0.33.1",
     "stylus": "^0.62.0",
