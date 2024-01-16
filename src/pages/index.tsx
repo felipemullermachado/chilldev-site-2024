@@ -13,7 +13,7 @@ import imgUnicred from '../assets/img/img-unicred.png'
 import imgPCCR from '../assets/img/img-pccr.png'
 import cn from 'classnames'
 import st from '../assets/styles/pageHome.module.styl'
-import { Cards, Tools, Head } from '@/components'
+import { Cards, Tools, Head, ContactBoxes } from '@/components'
 
 const cards = [
   {
@@ -143,6 +143,12 @@ export default function Home({ pathname }: PageProps) {
               Contact me.
             </p>
             <Cards cards={cards} />
+          </section>
+        </div>
+        <div className="container">
+          <section>
+            <h2 className="title text-center">Contact</h2>
+            <ContactBoxes />
           </section>
         </div>
       </main>
