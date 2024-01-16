@@ -73,12 +73,13 @@ body
   &.large-size
     font-size: 7.2rem
   &.little-size
-    font-size: 1.7rem
+    font-size: 1.9rem
     line-height: 1.333em
 
 .title
   + p
-    margin-top: 20px
+    &:not(.no-margin)
+      margin-top: 20px
 
 p,
 .text-size
@@ -121,15 +122,21 @@ div[class^="bkg-color-"]
   text-transform: uppercase;
   text-align center
   letter-spacing: .5px;
-  transition: background-color .4s,border .4s,color .4s;
-  &.btn-purple
-    border-color $color-white
-    color $color-purple
-    background $color-white
-    &:hover
-      background $color-purple
-      color $color-white !important
-      color #000
+  transition: background-color .4s, border .4s, color .4s;
+  position relative
+  &::after
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: 100%;
+    border-top: 4px solid #000;
+    border-left: 8px solid rgba(0,0,0,0);
+    border-right: 8px solid rgba(0,0,0,0);
+    box-sizing: border-box
+  &:hover
+    background-color rgba(0,0,0,.16)
 
 proportional(max-width 1699px, .8)
 
@@ -150,6 +157,9 @@ proportional(max-width 1699px, .8)
     > :first-child
       padding-top: 60px
   
+  .block-mobile
+    display: block
+    
   .container
     padding-bottom 60px
     width 100%
@@ -178,3 +188,6 @@ proportional(max-width 1699px, .8)
     font-size: 2.8rem
     &.large-size
       font-size: 3.8rem
+  
+  .block-phone
+    display: block
