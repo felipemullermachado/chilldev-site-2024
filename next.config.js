@@ -32,7 +32,8 @@ const nextConfig = {
     return config
   },
   env: {
-    siteUrl: 'https://chilldev.vercel.app', // Without trailing slash
+    siteUrl: 'https://felipemuller.dev', // Without trailing slash
+    resendApiKey: 're_HH2WLFNc_D7Hpn4fSPgP7PwNce34sZWuS',
   },
   compiler: {
     styledComponents: true,

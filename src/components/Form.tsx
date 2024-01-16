@@ -1,6 +1,7 @@
 import React, { ChangeEvent, ReactNode, useState } from 'react'
 import st from '../assets/styles/Form.module.styl'
 import cn from 'classnames'
+import { toast } from 'react-hot-toast'
 
 function maskNumber(value: string, mask: string) {
   for (const char of value) mask = mask.replace(/#/, char)
@@ -65,10 +66,22 @@ export function Form({
     setData(copyData)
   }
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    const submit = () => {}
-    submit()
+    const response = await fetch('api/send', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+    console.log(response)
+    console.log('entrou')
+    if (response.status === 200) {
+      setData({})
+      toast.success(`Hey ${data.name}, your message was sent successfully!`)
+    }
+    
   }
 
   return (
