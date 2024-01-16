@@ -1,4 +1,5 @@
 export * from './Cards'
+export * from './ContactBoxes'
 export * from './Form'
 export * from './Head'
 export * from './Tools'
