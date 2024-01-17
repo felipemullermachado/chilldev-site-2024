@@ -1,3 +1,5 @@
+import { Toaster } from 'react-hot-toast'
+import { Cards, Tools, Head, ContactBoxes } from '@/components'
 import Image from 'next/image'
 import imgFace from '../assets/img/img-face.jpg'
 import imgMarina from '../assets/img/img-marina-sunshine.png'
@@ -13,7 +15,6 @@ import imgUnicred from '../assets/img/img-unicred.png'
 import imgPCCR from '../assets/img/img-pccr.png'
 import cn from 'classnames'
 import st from '../assets/styles/pageHome.module.styl'
-import { Cards, Tools, Head, ContactBoxes } from '@/components'
 
 const cards = [
   {
@@ -117,10 +118,10 @@ export default function Home({ pathname }: PageProps) {
           >
             <h2 className="title">Hi, I&apos;m Felipe. Nice to meet you.</h2>
             <p>
-              I&apos;m a frontend developer with over three years of experience in
-              the tech industry. Throughout this period, I&apos;ve engaged in remote
-              work for agencies and collaborated with skilled individuals to
-              craft digital products catering to both business and consumer
+              I&apos;m a frontend developer with over three years of experience
+              in the tech industry. Throughout this period, I&apos;ve engaged in
+              remote work for agencies and collaborated with skilled individuals
+              to craft digital products catering to both business and consumer
               needs. I have a passion for bringing creative ideas proposed by
               UI/UX designers to life.
             </p>
@@ -139,8 +140,8 @@ export default function Home({ pathname }: PageProps) {
           <section>
             <h2 className="title text-center">My Recent Work</h2>
             <p className="text-center">
-              Here are some previous projects I&apos;ve worked on. Want to see more?
-              Contact me.
+              Here are some previous projects I&apos;ve worked on. Want to see
+              more? Contact me.
             </p>
             <Cards cards={cards} />
           </section>
@@ -152,6 +153,10 @@ export default function Home({ pathname }: PageProps) {
           </section>
         </div>
       </main>
+      <Toaster
+        position="bottom-right"
+        toastOptions={{ duration: 3000, style: { fontSize: 14 } }}
+      />
     </>
   )
 }
