@@ -75,13 +75,12 @@ export function Form({
       },
       body: JSON.stringify(data),
     })
-    console.log(response)
-    console.log('entrou')
     if (response.status === 200) {
       setData({})
       toast.success(`Hey ${data.name}, your message was sent successfully!`)
+    } else {
+      toast.error(`Hey ${data.name}. Message not sent, try again later.`)
     }
-    
   }
 
   return (
