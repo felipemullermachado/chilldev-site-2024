@@ -42,7 +42,8 @@ export function ContactBoxes() {
       <div className={st.formContainer}>
         <section>
           <h3 className="text-size large-size">
-            Got a question or proposal, or just want to say hello? <span className="block-mobile">Go ahead.</span>
+            Got a question or proposal, or just want to say hello?{' '}
+            <span className="block-mobile">Go ahead.</span>
           </h3>
           <Form
             inputs={[
@@ -77,6 +78,11 @@ export function ContactBoxes() {
               },
             ]}
             button={<button className="btn">Send message</button>}
+            loadingButton={
+              <button className="btn" disabled={true}>
+                Sending...
+              </button>
+            }
             idPrefix="contact"
           />
         </section>
