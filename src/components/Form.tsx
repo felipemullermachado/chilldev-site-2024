@@ -66,20 +66,26 @@ export function Form({
     setData(copyData)
   }
 
+  const [loading, setLoading] = useState(false)
+
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    const response = await fetch('api/send', {
+    setLoading(true)
+    const response = await fetch('/api/send', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
+        Accept: 'application/json',
       },
       body: JSON.stringify(data),
     })
     if (response.status === 200) {
-      setData({})
       toast.success(`Hey ${data.name}, your message was sent successfully!`)
+      setData({})
+      setLoading(false)
     } else {
       toast.error(`Hey ${data.name}. Message not sent, try again later.`)
+      setLoading(false)
     }
   }
 
@@ -117,7 +123,7 @@ export function Form({
           </div>
         )
       )}
-      <div className="form-submit">{button}</div>
+      <div className="form-submit">{loading ? loadingButton : button}</div>
     </form>
   )
 }

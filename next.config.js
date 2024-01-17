@@ -33,7 +33,7 @@ const nextConfig = {
   },
   env: {
     siteUrl: 'https://felipemuller.dev', // Without trailing slash
-    resendApiKey: 're_HH2WLFNc_D7Hpn4fSPgP7PwNce34sZWuS',
+    email: 'felipemullermachado@gmail.com',
   },
   compiler: {
     styledComponents: true,
