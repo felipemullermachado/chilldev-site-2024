@@ -2,7 +2,7 @@ import Helmet from 'next/head'
 
 const DEFAULT_TITLE = 'Felipe Müller | Frontend Developer'
 const DEFAULT_DESCRIPTION = 'Portfolio of Felipe Müller, front-end developer'
-const openGraph = require('../assets/img/opengraph.jpg').default.src
+const openGraph = require('../assets/img/opengraph.jpg?v=2').default.src
 
 export function Head({ title, description, pathname }: HeadProps) {
   return (
