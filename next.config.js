@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const withPlugins = require('next-with-plugins')
+const withTranspileModules = require('next-transpile-modules')([
+  '@fil1pe/react-slider',
+])
+
 const nextConfig = {
   output: 'standalone',
   reactStrictMode: true,
@@ -40,4 +44,4 @@ const nextConfig = {
   },
 }
 
-module.exports = withPlugins(nextConfig)
+module.exports = withPlugins(withTranspileModules(nextConfig))

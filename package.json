@@ -9,6 +9,7 @@
     "start": "next start -p 8000"
   },
   "dependencies": {
+    "@fil1pe/react-slider": "^1.9.6",
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.14",
     "@types/react": "^18",
