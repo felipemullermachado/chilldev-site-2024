@@ -42,7 +42,8 @@ export function ContactBoxes() {
       <div className={st.formContainer}>
         <section>
           <h3 className="text-size large-size">
-            Got a question or proposal, or just want to say hello?{' '}
+            Got a question or proposal, or just{' '}
+            <span className="block-phone">want to say hello?</span>{' '}
             <span className="block-mobile">Go ahead.</span>
           </h3>
           <Form

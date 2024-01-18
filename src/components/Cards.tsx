@@ -16,7 +16,6 @@ export function Cards({ cards }: CardsProps) {
               className="btn"
             >
               Visit Website
-              <span></span>
             </a>
           </section>
         </li>

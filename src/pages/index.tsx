@@ -69,7 +69,7 @@ const cards = [
     link: 'https://andreaspalazzo.formacco.com.br/',
   },
   {
-    title: 'Career and remuneration plan for bank employees',
+    title: 'Website about the career and remuneration plan for employees of a bank',
     company: 'Career and remuneration - Unicred',
     imgSrc: imgPCCR,
     link: 'https://www.pccrcentralconexao.com.br/',
@@ -116,7 +116,10 @@ export default function Home({ pathname }: PageProps) {
           <section
             className={cn('container color-white text-center', st.introduce)}
           >
-            <h2 className="title">Hi, I&apos;m Felipe. Nice to meet you.</h2>
+            <h2 className="title">
+              Hi, I&apos;m Felipe.{' '}
+              <span className="block-phone">Nice to meet you.</span>
+            </h2>
             <p>
               I&apos;m a frontend developer with over three years of experience
               in the tech industry. Throughout this period, I&apos;ve engaged in

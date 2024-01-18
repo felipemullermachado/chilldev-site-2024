@@ -14,12 +14,14 @@
     justify-content: center
     align-items: center
     position relative
-    transition transform .15s ease-in
     &:hover
+      img
+        transform scale(1.15)
       .title
         opacity 1
   img
     max-width: 60%
+    transition transform .15s ease
   figure 
     border-radius: inherit
   .title
@@ -30,14 +32,13 @@
     top 50%
     transform translate(-50%, -50%)
     border-radius: inherit
-    background #4831d4
+    background #fff
     display flex
     justify-content: center
     align-items: center
     opacity 0
-    transition all .2s ease-in
+    transition all .3s ease-in
     span
-      background #fff
       padding 5px
       user-select: none
       width 100%
