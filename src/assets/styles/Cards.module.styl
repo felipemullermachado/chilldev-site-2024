@@ -3,7 +3,7 @@
   flex-wrap: wrap
   margin-top: 30px
   gap 20px
-  >li
+  .card
     box-shadow: 0px 12px 24px 0px rgba(33,36,41,.2)
     max-width: calc(20% - 16px)
     width 100%
@@ -19,41 +19,70 @@
     section
       display: flex
       flex-direction: column
-      h3
-        padding 0 3px
-      :global(.btn)
-        position: absolute
-        width calc(100% - 24px)
-        bottom 20px
-
-      img
-        order -1
-        border-radius: 3px
-        aspect-ratio: 255/169
-        object-fit: cover
-        margin-bottom 10px
+    h3
+      padding 0 3px
+    :global(.btn)
+      position: absolute
+      width calc(100% - 24px)
+      bottom 20px
+    img
+      order -1
+      border-radius: 3px
+      aspect-ratio: 255/169
+      object-fit: cover
+      margin-bottom 10px
+      max-width: 100%
 
 @media only screen and (max-width: 1699px)
   .core
-    >li
+    .card
       max-width: calc(25% - 15px)
       min-height: 330px
 
 @media only screen and (max-width: 1279px)
   .core
-    >li
+    .card
       max-width: calc(33.333% - 13.333px)
 
 @media only screen and (max-width: 767px)
   .core
-    >li
-      max-width: calc(50% - 10px)
+    display: block
+    :global(.track)
+      overflow: visible !important
+      >ul
+        >li
+          padding 0 5px
+    :global(.dots)
+      display: none
+    
+    :global(.main)
+      position relative
+      padding-bottom 75px
+      :global(.arrow)
+        position: absolute
+        bottom 0
+        font-size: 0
+        display: block
+        width 50px
+        aspect-ratio: 1
+        background #fff url(../svg/icon-arrow.svg) center no-repeat
+        background-size: 50% auto
+        left calc(50% + 30px)
+        transform translateX(-50%)
+        border 2px solid #000
+        border-radius: 5px
+        &:first-of-type
+          left calc(50% - 30px)
+          transform translateX(-50%) rotate(180deg)
+    .card
+      max-width: none
+      width auto
+      display: flex
+      flex-direction: column
+      height: 100vw
 
 @media only screen and (max-width: 500px)
   .core
-    >li
-      max-width: 100%
-      min-height: 350px
-      section
-        img
-          aspect-ratio: 2/1
+    .card
+      img
+        aspect-ratio: 2/1
