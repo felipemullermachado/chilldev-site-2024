@@ -1,6 +1,5 @@
 export * from './Cards'
 export * from './ContactBoxes'
-export * from './EmailTemplate'
 export * from './Form'
 export * from './Head'
 export * from './Tools'
