@@ -20,7 +20,7 @@ export function Head({ title, description, pathname }: HeadProps) {
       <link rel="canonical" href={canonicalUrl(pathname)} />
       <meta property="og:url" content={canonicalUrl(pathname)} />
       <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-      <meta property="og:locale" content="pt_BR" />
+      <meta property="og:locale" content="en_US" />
       <meta charSet="utf-8" />
       <meta
         name="viewport"
