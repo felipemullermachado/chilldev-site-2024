@@ -122,8 +122,10 @@ div[class^="bkg-color-"]
   text-transform: uppercase;
   text-align center
   letter-spacing: .5px;
-  transition: background-color .4s, border .4s, color .4s;
+  transition: background-color .4s
   position relative
+  color #000
+  background #fff
   &::after
     content: "";
     display: block;
@@ -136,7 +138,14 @@ div[class^="bkg-color-"]
     border-right: 8px solid rgba(0,0,0,0);  // @proportional-skip
     box-sizing: border-box
   &:hover
-    background-color rgba(0,0,0,.16)
+    background-color rgb(226, 226, 226)
+  &[disabled]
+    color inherit
+    background-color rgb(226, 226, 226)
+  &.btn-large
+    font-size: 1.8rem
+    padding-top: 13px
+    padding-bottom 13px
 
 proportional(max-width 1699px, .8)
 
@@ -175,6 +184,10 @@ proportional(max-width 1699px, .8)
     font-size: 1.6rem
     &.large-size
       font-size: 1.6rem
+  
+  .btn
+    &.btn-large
+      font-size: 1.5rem
 
 @media only screen and (max-width: 767px)
   main

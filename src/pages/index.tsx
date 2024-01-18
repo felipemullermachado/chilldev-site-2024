@@ -69,7 +69,8 @@ const cards = [
     link: 'https://andreaspalazzo.formacco.com.br/',
   },
   {
-    title: 'Website about the career and remuneration plan for employees of a bank',
+    title:
+      'Website about the career and remuneration plan for employees of a bank',
     company: 'Career and remuneration - Unicred',
     imgSrc: imgPCCR,
     link: 'https://www.pccrcentralconexao.com.br/',
@@ -101,7 +102,7 @@ export default function Home({ pathname }: PageProps) {
             </span>
           </h1>
           <p className="large-size">
-            I convert user interface prototypes into code, implementing a
+            I become user interface prototypes into clean code, implementing a
             responsive and user-friendly website.
           </p>
           <p className="large-size">
@@ -128,6 +129,14 @@ export default function Home({ pathname }: PageProps) {
               needs. I have a passion for bringing creative ideas proposed by
               UI/UX designers to life.
             </p>
+            <a
+              href="/resume-felipe-muller.pdf"
+              title="View Resume"
+              target="_blank"
+              className="btn btn-large"
+            >
+              View Resume
+            </a>
           </section>
         </div>
         <div className="container">
