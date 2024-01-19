@@ -39,7 +39,7 @@ export function Cards({ cards }: CardsProps) {
                   target="_blank"
                   className="btn"
                 >
-                  Visit Website
+                  <span>Visit Website</span>
                 </a>
               </section>
             ))}

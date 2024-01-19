@@ -25,8 +25,10 @@
       position: absolute
       width calc(100% - 24px)
       bottom 20px
-      // &::after
-      //   bottom -5px
+      white-space: normal
+      span
+        display: block
+        line-height: 1em
     img
       order -1
       border-radius: 3px
@@ -49,17 +51,6 @@
 @media only screen and (max-width: 767px)
   .core
     display: block
-    :global(.btn)
-      &::before
-        content ''
-        position: absolute
-        width calc(100% - 2px)
-        left: 1px
-        height: 1px
-        background #000
-        z-index 2
-        bottom -3px
-        border-radius: 10px
     :global(.track)
       overflow: visible !important
       >ul
