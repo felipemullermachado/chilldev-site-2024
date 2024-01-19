@@ -102,7 +102,7 @@ export default function Home({ pathname }: PageProps) {
             </span>
           </h1>
           <p className="large-size">
-            I become user interface prototypes into clean code, implementing a
+            I convert user interface prototypes into clean code, implementing a
             responsive and user-friendly website.
           </p>
           <p className="large-size">
