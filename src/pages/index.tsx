@@ -26,7 +26,7 @@ const cards = [
   },
   {
     title:
-      'Land sales campaign for a building construction and urban infrastructure company',
+      'Land sales campaign for a construction and urban infrastructure company',
     company: 'Marina Sunshine',
     imgSrc: imgMarina,
     link: 'https://www.marinasunshine.com.br/',
@@ -38,39 +38,39 @@ const cards = [
     link: 'https://www.dimasseguros.com.br/',
   },
   {
-    title: 'Apartment sales campaign for a building company',
+    title: 'Apartment sales campaign for a construction company',
     company: 'Acqua Continentale',
     imgSrc: imgAqua,
     link: 'https://acqua.formacco.com.br/',
   },
   {
-    title: 'Blog about financial education for a bank',
+    title: 'Unicred bank`s blog on financial education',
     company: 'Unicred - Blog',
     imgSrc: imgUnicred,
     link: 'https://unicred.com.br/centralconexao/suasaudefinanceira/',
   },
   {
-    title: 'Apartment sales campaign for a building company',
+    title: 'Apartment sales campaign for a construction company',
     company: 'Bliss',
     imgSrc: imgBliss,
     link: 'https://www.cota.com.br/bliss-living/',
   },
   {
     title:
-      'Stand management system for Latin America`s largest marketing, sales and innovation fair',
+      'Exhibition Stand management system for Latin America`s largest marketing, sales, and innovation fair',
     company: 'Partners RD Summit',
     imgSrc: imgRDSummit,
     link: 'https://patrocinadorrdsummit.rdstation.com/',
   },
   {
-    title: 'Apartment sales campaign for a building company',
+    title: 'Apartment sales campaign for a construction company',
     company: 'Andreas Palazzo',
     imgSrc: imgPalazzo,
     link: 'https://andreaspalazzo.formacco.com.br/',
   },
   {
     title:
-      'Website about the career and remuneration plan for employees of a bank',
+      'Website about the career and remuneration plan for employees of Unicred Bank`s employees',
     company: 'Career and remuneration - Unicred',
     imgSrc: imgPCCR,
     link: 'https://www.pccrcentralconexao.com.br/',
@@ -82,7 +82,7 @@ const cards = [
     link: 'https://www.meetime.com.br/',
   },
   {
-    title: 'Apartment sales campaign for a building company',
+    title: 'Apartment sales campaign for a construction company',
     company: 'Pátio das Artes',
     imgSrc: imgPatio,
     link: 'https://www.patiodasartes.com.br/',
@@ -152,7 +152,7 @@ export default function Home({ pathname }: PageProps) {
           <section>
             <h2 className="title text-center">My Recent Work</h2>
             <p className="text-center">
-              Here are some previous projects I&apos;ve worked on. Want to see
+              Here are some of previous projects I&apos;ve worked on. Want to see
               more? Contact me.
             </p>
             <Cards cards={cards} />
