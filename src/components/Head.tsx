@@ -1,6 +1,6 @@
 import Helmet from 'next/head'
 
-const DEFAULT_TITLE = 'Felipe Müller | Frontend Developer'
+const DEFAULT_TITLE = 'Felipe Müller | Front-end Developer'
 const DEFAULT_DESCRIPTION = 'Portfolio of Felipe Müller, front-end developer'
 const openGraph = require('../assets/img/opengraph.jpg?v=2').default.src
 

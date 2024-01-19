@@ -98,7 +98,7 @@ export default function Home({ pathname }: PageProps) {
           <h1 className="title large-size">
             Does your team need a{' '}
             <span className="block">
-              <span className="color-purple">Frontend Developer</span> ?
+              <span className="color-purple">Front-end Developer</span> ?
             </span>
           </h1>
           <p className="large-size">
@@ -122,7 +122,7 @@ export default function Home({ pathname }: PageProps) {
               <span className="block-phone">Nice to meet you.</span>
             </h2>
             <p>
-              I&apos;m a frontend developer with over three years of experience
+              I&apos;m a front-end developer with over three years of experience
               in the tech industry. Throughout this period, I&apos;ve engaged in
               remote work for agencies and collaborated with skilled individuals
               to craft digital products catering to both business and consumer
