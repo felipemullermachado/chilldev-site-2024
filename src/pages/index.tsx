@@ -44,7 +44,7 @@ const cards = [
     link: 'https://acqua.formacco.com.br/',
   },
   {
-    title: 'Unicred bank`s blog on financial education',
+    title: "Unicred bank's blog on financial education",
     company: 'Unicred - Blog',
     imgSrc: imgUnicred,
     link: 'https://unicred.com.br/centralconexao/suasaudefinanceira/',
@@ -57,7 +57,7 @@ const cards = [
   },
   {
     title:
-      'Exhibition Stand management system for Latin America`s largest marketing, sales, and innovation fair',
+      "Exhibition Stand management system for Latin America's largest marketing, sales, and innovation fair",
     company: 'Partners RD Summit',
     imgSrc: imgRDSummit,
     link: 'https://patrocinadorrdsummit.rdstation.com/',
@@ -70,7 +70,7 @@ const cards = [
   },
   {
     title:
-      'Website about the career and remuneration plan for employees of Unicred Bank`s employees',
+      "Website about the career and remuneration plan for employees of Unicred Bank's employees",
     company: 'Career and remuneration - Unicred',
     imgSrc: imgPCCR,
     link: 'https://www.pccrcentralconexao.com.br/',
@@ -152,8 +152,8 @@ export default function Home({ pathname }: PageProps) {
           <section>
             <h2 className="title text-center">My Recent Work</h2>
             <p className="text-center">
-              Here are some of previous projects I&apos;ve worked on. Want to see
-              more? Contact me.
+              Here are some of previous projects I&apos;ve worked on. Want to
+              see more? Contact me.
             </p>
             <Cards cards={cards} />
           </section>
