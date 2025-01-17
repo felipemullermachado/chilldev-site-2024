@@ -36,7 +36,7 @@ const nextConfig = {
     return config
   },
   env: {
-    siteUrl: 'https://felipemuller.dev', // Without trailing slash
+    siteUrl: 'https://felipemuller.com', // Without trailing slash
     email: 'felipemullermachado@gmail.com',
   },
   compiler: {
